@@ -7,7 +7,6 @@ body{
 	background-image: url(imagens/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	cursor: url(imagens/mata-mosquito.png);
 }
 /*Definindo o tamanho do mosquito*/
 .mosquito1{

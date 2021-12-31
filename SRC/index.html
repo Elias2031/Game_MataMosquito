@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../estilo.css">
+
+	<script>
+		function iniciarJogo() {
+			var nivel = document.getElementById("nivel").value;
+			if (nivel === 'invalido') {
+				alert('defina um nivel para iniciar o jogo')
+				return false
+			}
+			window.location.href = 'app.html?' + nivel
+		}
+	</script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="d-flex justify-content-center">
+					<img src="../imagens/game.png"><br>
+				</div>
+				<div>
+					<select class="form-control" id="nivel">
+						<option value="invalido">>-- Selecione o nivel</option>
+						<option value="normal">Normal</option>
+						<option value="dificil">Dificil</option>
+						<option value="chocknorrys">Nivel Chuck Norrys</option>
+					</select>
+					<button onclick="iniciarJogo() " class="btn
+					btn-block btn-info btn-lg mt-2">Iniciar jogo</button>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>
