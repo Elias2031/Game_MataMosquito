@@ -1,0 +1,57 @@
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-image: url(imagens/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: url(imagens/mata-mosquito.png);
+}
+/*Definindo o tamanho do mosquito*/
+.mosquito1{
+	width: 50px;
+	height: 50px;
+}
+
+.mosquito2{
+	width: 70px;
+	height: 70px;
+}
+
+.mosquito3{
+	width: 90px;
+	height: 90px;
+}
+
+/*Definindo os lados do mosquito*/
+.ladoA{
+	transform: scaleX(1);
+}
+
+.ladoB{
+	transform: scaleX(-1);
+}
+
+/*Configurações do painen inferior*/
+.painel{
+	position: absolute;
+	width: 190px;
+	padding: 10px;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid #fff;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.vidas{
+	float: left;
+}
+
+.cronometro{
+	font-weight: bold;
+	font-size: 20px;
+	float: left;
+}
